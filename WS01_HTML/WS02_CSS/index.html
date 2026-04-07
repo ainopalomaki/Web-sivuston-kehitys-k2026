@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ainon harjoitussivu</title>
+
+    <style>
+      h1 {
+        color: #008000;
+      }
+      p {
+        color: #800080;
+      }
+
+      body {
+        background-color: rgb(240, 235, 235);
+      }
+
+      h1 {
+        font-size: 3em;
+      }
+      .content-box {
+        padding: 15px;
+        margin: 15px;
+        background-color: #baeaba;
+        border: 1px solid #800080;
+      }
+      table {
+        width: 50%;
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        border: 1px solid #800080;
+        padding: 5px;
+        text-align: middle;
+      }
+
+      th {
+        background-color: #baeaba;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+      }
+
+      label {
+        font-weight: bold;
+      }
+
+      input[type="text"],
+      input[type="email"] {
+        padding: 5px;
+        border: 1px solid #800080;
+        border-radius: 5px;
+      }
+
+      input[type="submit"] {
+        background-color: #008000;
+        color: white;
+        padding: 8px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to my Page</h1>
+    <p>Aino harjoittelee HTML:ää jeejee.</p>
+
+  <img
+    src="./images/Aino_img_.JPG"
+    alt="Kuva Ainosta"
+    width="150"
+    height="150"
+  />
+  <h2>Mistä tykkään?</h2>
+    <ul>
+      <li>Ötökät</li>
+      <li>Linnut</li>
+      <li>Energiajuomat</li>
+    </ul>
+
+    <h2>Mistä en tykkää?</h2>
+    <ul>
+      <li>Keltainen vessapaperi</li>
+      <li>Matematiikka</li>
+      <li>Korianteri</li>
+    </ul>
+
+    <a href="https://www.laurea.fi">Visit Laurea</a>
+
+    <table>
+      <tr>
+        <th>Mikä kurssi?</th>
+        <th>Mitkä fiilikset?</th>
+      </tr>
+      <tr>
+        <td>Enkun kurssi</td>
+        <td>Kiva kurssi!</td>
+      </tr>
+      <tr>
+        <td>Web-sivuston kehitys</td>
+        <td>Hirveesti uutta!</td>
+      </tr>
+      <tr>
+        <td>Liiketoiminta</td>
+        <td>Tuskaista</td>
+      </tr>
+    </table>
+
+    <div class="content-box">
+      <h3>Muista:</h3>
+      <p>Se joka pieruu pidättää sil on muutaki salattavaa.</p>
+    </div>
+
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" /><br /><br />
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+    <link rel="stylesheet" href="styles.css" />
+  </body>
+</html>
