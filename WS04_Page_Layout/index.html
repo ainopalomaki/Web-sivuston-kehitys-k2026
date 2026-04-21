@@ -1,0 +1,80 @@
+<header>
+  <h1>Aino's Website</h1>
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Aino is an aspiring IT-specialist. Aino likes beetles and pigeons. Aino doesn't like asparagus or tight jeans.</p>
+  </section>
+</main>
+
+<footer>
+  <p>Copyright 2025</p>
+</footer>
+
+<div class="grid-container">
+  <div class="grid-item">Moi</div>
+  <div class="grid-item">Moro</div>
+  <div class="grid-item">Terve</div>
+  <div class="grid-item">Terse</div>
+  <div class="grid-item">Päivää</div>
+  <div class="grid-item">Iltaa</div>
+</div>
+
+<div class="flex-container">
+  <div class="box">Heipsu</div>
+  <div class="box">Moiccu</div>
+  <div class="box">Moixu</div>
+</div>
+
+<div class="responsive-box">Resize the window to see the effect</div>
+
+
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.grid-item {
+  background-color: rgb(201, 227, 210);
+  padding: 25px;
+  text-align: center;
+}
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.box {
+  background-color: rgb(204, 173, 230);
+  padding: 20px;
+  text-align: center;
+}
+.responsive-box {
+  padding: 20px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .responsive-box {
+    background-color: rgb(232, 151, 151);
+  }
+}
+
+@media (min-width: 601px) {
+  .responsive-box {
+    background-color: rgb(201, 227, 210);
+  }
+}
+</style>
