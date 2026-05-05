@@ -1,0 +1,140 @@
+<header>
+  <h1>Aino's Website</h1>
+</header>
+
+<main>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Aino is an aspiring IT-specialist. Aino likes beetles and pigeons. Aino doesn't like asparagus or tight jeans.</p>
+  </section>
+</main>
+
+<nav class="responsive-nav">
+      <button class="menu-toggle">☰ Menu</button>
+      <ul class="nav-list">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+<footer>
+  <p>Copyright 2025</p>
+</footer>
+
+<div class="grid-container">
+  <div class="grid-item">Moi</div>
+  <div class="grid-item">Moro</div>
+  <div class="grid-item">Terve</div>
+  <div class="grid-item">Terse</div>
+  <div class="grid-item">Päivää</div>
+  <div class="grid-item">Iltaa</div>
+</div>
+
+<div class="flex-container">
+  <div class="box">Heipsu</div>
+  <div class="box">Moiccu</div>
+  <div class="box">Moixu</div>
+</div>
+
+<div class="responsive-box">Resize the window to see the effect</div>
+
+<div class="responsive-container">
+      <div class="column">Jippii</div>
+      <div class="column">Jee</div>
+    </div>
+
+<img src="./images/Lenni.JPG" alt="Responsive Image" class="responsive-image" width="300" height="300" >
+
+<div class="media-query-box">Resize the window to see the effect</div>
+
+
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.grid-item {
+  background-color: rgb(201, 227, 210);
+  padding: 25px;
+  text-align: center;
+}
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.box {
+  background-color: rgb(204, 173, 230);
+  padding: 20px;
+  text-align: center;
+}
+.responsive-box {
+  padding: 20px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .responsive-box {
+    background-color: rgb(232, 151, 151);
+  }
+}
+
+@media (min-width: 601px) {
+  .responsive-box {
+    background-color: rgb(201, 227, 210);
+  }
+}
+.responsive-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    .column {
+      flex: 1;
+      padding: 10px;
+    }
+    
+    @media (max-width: 600px) {
+      .column {
+        flex: 100%;
+      }
+    }
+    .responsive-image {
+      max-width: 100%;
+      height: auto;
+    }
+    .media-query-box {
+      padding: 20px;
+      text-align: center;
+    }
+    
+    @media (max-width: 600px) {
+      .media-query-box {
+        background-color: rgb(112, 143, 119);
+      }
+    }
+    
+    @media (min-width: 601px) {
+      .media-query-box {
+        background-color: rgb(170, 205, 216);
+      }
+    }
+    .responsive-nav .nav-list {
+      display: flex;
+      list-style: none;
+    }
+    
+    @media (max-width: 600px) {
+      .responsive-nav .nav-list {
+        display: none;
+      }
+    
+      .responsive-nav .menu-toggle {
+        display: block;
+      }
+    }
+</style>
