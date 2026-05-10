@@ -162,3 +162,80 @@ h1 {
   color: #282828;
   line-height: 1.6;
 }
+/* Carousel container */
+.carousel {
+  width: 800px;
+  height: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Hide radio buttons */
+.carousel input[type="radio"] {
+  display: none;
+}
+
+/* Slides container */
+.slides {
+  display: flex;
+  width: 300%;
+  height: 100%;
+  transition: transform 0.5s ease;
+}
+
+/* Individual slides */
+.slide {
+  width: 33.33%;
+  height: 100%;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Navigation dots */
+.dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.dots label {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dots label:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Slide transitions */
+#slide1:checked ~ .slides {
+  transform: translateX(0%);
+}
+#slide2:checked ~ .slides {
+  transform: translateX(-33.33%);
+}
+#slide3:checked ~ .slides {
+  transform: translateX(-66.66%);
+}
+@media (max-width: 768px) {
+  .carousel {
+    width: 100%;
+    height: 300px;
+  }
+}

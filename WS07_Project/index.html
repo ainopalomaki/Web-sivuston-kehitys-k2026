@@ -1,21 +1,19 @@
 <!doctype html>
 <html lang="fi">
   <head>
-    <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-    rel="stylesheet"
-  />
   <body>
     <h1 class="website-title">Lintujen ihmeellinen maailma</h1>
-    <link rel="stylesheet" href="style.css" />
     <nav class="navbar">
       <div class="navbar-container">
         <a href="#" class="navbar-logo">Ainon oma lintumaailma</a>
@@ -35,12 +33,41 @@
         </ul>
       </div>
     </nav>
-    <div class="fact-box">
-      <h2>Tervetuloa lintujen ystävä!</h2>
-      <p>
-        Täältä löydät maailman parhaat lintulajit, vinkkejä aloittelevalle
-        lintubongaajalle sekä tietoa lintujen suojelusta!
-      </p>
+    <div class="carousel">
+      <!-- Radio buttons for navigation -->
+      <input type="radio" name="carousel" id="slide1" checked />
+      <input type="radio" name="carousel" id="slide2" />
+      <input type="radio" name="carousel" id="slide3" />
+
+      <!-- Slides -->
+      <div class="slides">
+        <div class="slide">
+          <img
+            src="images/lapinpollo.jpg"
+            alt="lapinpollo"
+            width="500"
+            height="300"
+          />
+        </div>
+        <div class="slide">
+          <img src="images/kuikat.jpg" alt="kuikat" width="500" height="300" />
+        </div>
+        <div class="slide">
+          <img
+            src="images/toyhtohyyppa.jpg"
+            alt="toyhtohyyppa"
+            width="500"
+            height="300"
+          />
+        </div>
+      </div>
+
+      <!-- Navigation dots -->
+      <div class="dots">
+        <label for="slide1"></label>
+        <label for="slide2"></label>
+        <label for="slide3"></label>
+      </div>
     </div>
   </body>
 </html>
