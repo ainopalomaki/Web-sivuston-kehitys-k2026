@@ -1,13 +1,7 @@
 body {
   background-color: #607160;
 }
-/* Reset default margin and padding */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-/* Reset default margin and padding */
+/* Default margin and padding */
 * {
   margin: 0;
   padding: 0;
@@ -98,49 +92,6 @@ h1 {
   font-size: 14px;
   resize: none;
   margin: 10px;
-}
-/* Contact form */
-.contact-form {
-  max-width: 500px;
-  margin: 0 auto;
-  text-align: left;
-}
-
-.contact-form label {
-  display: block;
-  margin-top: 1rem;
-  font-weight: bold;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 0.5rem;
-  margin-top: 0.5rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-family: inherit;
-}
-
-.contact-form textarea {
-  height: 100px;
-  resize: vertical;
-}
-
-.contact-form button {
-  background-color: #3498db;
-  color: white;
-  border: none;
-  padding: 0.75rem 1.5rem;
-  margin-top: 1rem;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 1rem;
-  transition: background-color 0.3s ease;
-}
-
-.contact-form button:hover {
-  background-color: #2980b9;
 }
 .fact-box {
   background-color: #f8f9fa;
@@ -270,3 +221,130 @@ h1 {
 .intro-box {
   margin-top: 33rem; /* Lisää tilaa infoboxin yläpuolelle */
 }
+.suojelu-title {
+   font-family: "Playfair Display", serif;
+  font-size: 3rem;
+  color: #ffffff;
+  text-align: center;
+  margin: 1rem 0;
+  font-weight: 700;
+}
+/* Hero-osio */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1200x400');
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 1rem;
+}
+.hero-content {
+    max-width: 800px;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+.hero button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+.hero button:hover {
+    background-color: #2980b9;
+}
+.img-fluid1 {
+    display: block;
+    max-width: 80%; /* Maksimileveys 80% */
+    height: auto;
+    float: left;
+    margin: 3rem auto 0; /* Tilaa kuvan yläpuolelle */
+    margin-left: 1.5rem; /* Tilaa sivun ja kuvan väliin */
+    border-radius: 7px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border: 3px solid;
+    border-image: linear-gradient(to right, #0f3a1b, #317e47) 1; /* Liukuväri reunus */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover efekti */
+}
+
+.img-fluid1:hover {
+    transform: scale(1.02); /* Kuva suurenee hieman */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3); /* Varjo syvenee */
+}
+.bird-list-simple {
+    max-width: 600px;
+    margin: 0 auto 3rem;
+    text-align: center;
+    margin: 2rem auto 3rem; /* Lisää tilaa listan yläpuolelle */
+}
+
+.bird-list-simple h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: #111b12;
+    margin-bottom: 1.5rem;
+}
+
+.bird-names {
+    list-style: none;
+    text-align: left;
+}
+
+.bird-names li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 1.1rem;
+    color: #111b12;
+}
+
+.bird-names li:last-child {
+    border-bottom: none;
+}
+/* Responsiivisuus */
+@media (max-width: 768px) {
+    .bird-names li {
+        font-size: 1rem;
+        padding: 0.5rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .bird-names li {
+        font-size: 0.9rem;
+    }
+}
+.img-fluid2 {
+    display: block;
+    max-width: 80%; /* Maksimileveys 80% */
+    height: auto;
+    float: right;
+    margin: 3rem auto 0; /* Tilaa kuvan yläpuolelle */
+    margin-right: 1.5rem; /* Tilaa sivun ja kuvan väliin */
+    border-radius: 7px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border: 3px solid;
+    border-image: linear-gradient(to right, #0f3a1b, #317e47) 1; /* Liukuväri reunus */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover efekti */
+}
+.img-fluid2:hover {
+    transform: scale(1.02); /* Kuva suurenee hieman */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3); /* Varjo syvenee */
+}
+
+
