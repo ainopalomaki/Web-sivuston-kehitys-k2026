@@ -346,5 +346,30 @@ h1 {
     transform: scale(1.02); /* Kuva suurenee hieman */
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3); /* Varjo syvenee */
 }
+.styled-paragraph {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #1d1d1d;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+.styled-subheading {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: #111b12;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin: 2rem auto 1rem;
+    padding-bottom: 0.5rem;
+    max-width: 100%;
+}
 
 
