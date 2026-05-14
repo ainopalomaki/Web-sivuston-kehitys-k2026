@@ -349,7 +349,7 @@ h1 {
 .styled-paragraph {
     font-family: 'Playfair Display', serif;
     font-size: 1.1rem;
-    line-height: 1.8;
+    line-height: 1.4;
     color: #1d1d1d;
     max-width: 800px;
     margin: 0 auto 2rem;
@@ -362,7 +362,7 @@ h1 {
 .styled-subheading {
     font-family: 'Playfair Display', serif;
     font-size: 1.8rem;
-    color: #111b12;
+    color: #101c12;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -371,5 +371,167 @@ h1 {
     padding-bottom: 0.5rem;
     max-width: 100%;
 }
+/* Lintukatotaulukko */
+.table-section {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
 
+.table-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #101c12;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
 
+/* Table container */
+.table-container {
+    overflow-x: auto;
+    margin: 0 auto;
+    max-width: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: white;
+    padding: 1rem;
+}
+
+/* Taulukko stailaus */
+.lintukato-taulukko {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1rem;
+    color: #333;
+}
+
+.lintukato-taulukko caption {
+    font-style: italic;
+    color: #555;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 0.9rem;
+    caption-side: bottom;
+}
+
+.lintukato-taulukko th {
+    background-color: #305237;
+    color: white;
+    font-weight: 600;
+    text-align: left;
+    padding: 1rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.lintukato-taulukko td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: left;
+}
+
+/* Alternating row colors */
+.lintukato-taulukko tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+/* Header cell styling */
+.lintukato-taulukko th:first-child {
+    border-top-left-radius: 8px;
+}
+
+.lintukato-taulukko th:last-child {
+    border-top-right-radius: 8px;
+}
+
+/* Responsiivisuus */
+@media (max-width: 768px) {
+    .lintukato-taulukko th,
+    .lintukato-taulukko td {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .lintukato-taulukko {
+        font-size: 0.8rem;
+    }
+
+    .lintukato-taulukko th,
+    .lintukato-taulukko td {
+        padding: 0.4rem;
+    }
+}
+.styled-subheading2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: #101c12;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin: 2rem auto 1rem;
+    padding-bottom: 0.5rem;
+    max-width: 100%;
+}
+/* Vinkki osuus */
+.help-tips {
+    margin-bottom: 3rem;
+}
+
+.help-tips h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.tips-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+.tip-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tip-icon {
+    font-size: 2rem;
+    color: #62bb5c;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.tip-card h3 {
+    font-size: 1.3rem;
+    color: #122017;
+    margin-bottom: 0.75rem;
+    text-align: center;
+}
+
+.tip-card p {
+    color: #122017;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.learn-more {
+    display: inline-block;
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    text-align: center;
+}
+
+.learn-more:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
