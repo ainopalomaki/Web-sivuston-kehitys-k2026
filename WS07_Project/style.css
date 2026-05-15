@@ -225,7 +225,7 @@ h1 {
 /* SUOJELU-SIVU */
 
 .suojelu-title {
-   font-family: "Playfair Display", serif;
+  font-family: "Playfair Display", serif;
   font-size: 3rem;
   color: #ffffff;
   text-align: center;
@@ -234,434 +234,444 @@ h1 {
 }
 /* Hero-osio */
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1200x400');
-    background-size: cover;
-    background-position: center;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-    padding: 0 1rem;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://via.placeholder.com/1200x400");
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 0 1rem;
 }
 .hero-content {
-    max-width: 800px;
+  max-width: 800px;
 }
 
 .hero h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-family: "Playfair Display", serif;
 }
 
 .hero p {
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
 }
 .hero button {
-    background-color: #3498db;
-    color: white;
-    border: none;
-    padding: 0.75rem 1.5rem;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background-color 0.3s ease;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
 }
 .hero button:hover {
-    background-color: #2980b9;
+  background-color: #2980b9;
 }
 .img-fluid1 {
-    display: block;
-    max-width: 80%; /* Maksimileveys 80% */
-    height: auto;
-    float: left;
-    margin: 3rem auto 0; /* Tilaa kuvan yläpuolelle */
-    margin-left: 1.5rem; /* Tilaa sivun ja kuvan väliin */
-    border-radius: 7px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    border: 3px solid;
-    border-image: linear-gradient(to right, #0f3a1b, #317e47) 1; /* Liukuväri reunus */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover efekti */
+  display: block;
+  max-width: 80%; /* Maksimileveys 80% */
+  height: auto;
+  float: left;
+  margin: 3rem auto 0; /* Tilaa kuvan yläpuolelle */
+  margin-left: 1.5rem; /* Tilaa sivun ja kuvan väliin */
+  border-radius: 7px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border: 3px solid;
+  border-image: linear-gradient(to right, #0f3a1b, #317e47) 1; /* Liukuväri reunus */
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease; /* Hover efekti */
 }
 
 .img-fluid1:hover {
-    transform: scale(1.02); /* Kuva suurenee hieman */
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3); /* Varjo syvenee */
+  transform: scale(1.02); /* Kuva suurenee hieman */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3); /* Varjo syvenee */
 }
 .bird-list-simple {
-    max-width: 600px;
-    margin: 0 auto 3rem;
-    text-align: center;
-    margin: 2rem auto 3rem; /* Lisää tilaa listan yläpuolelle */
+  max-width: 600px;
+  margin: 0 auto 3rem;
+  text-align: center;
+  margin: 2rem auto 3rem; /* Lisää tilaa listan yläpuolelle */
 }
 
 .bird-list-simple h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.8rem;
-    color: #111b12;
-    margin-bottom: 1.5rem;
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+  color: #111b12;
+  margin-bottom: 1.5rem;
 }
 
 .bird-names {
-    list-style: none;
-    text-align: left;
+  list-style: none;
+  text-align: left;
 }
 
 .bird-names li {
-    padding: 0.75rem 0;
-    border-bottom: 1px solid #e0e0e0;
-    font-size: 1.1rem;
-    color: #111b12;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 1.1rem;
+  color: #111b12;
 }
 
 .bird-names li:last-child {
-    border-bottom: none;
+  border-bottom: none;
 }
 /* Responsiivisuus */
 @media (max-width: 768px) {
-    .bird-names li {
-        font-size: 1rem;
-        padding: 0.5rem 0;
-    }
+  .bird-names li {
+    font-size: 1rem;
+    padding: 0.5rem 0;
+  }
 }
 
 @media (max-width: 480px) {
-    .bird-names li {
-        font-size: 0.9rem;
-    }
+  .bird-names li {
+    font-size: 0.9rem;
+  }
 }
 .img-fluid2 {
-    display: block;
-    max-width: 80%; /* Maksimileveys 80% */
-    height: auto;
-    float: right;
-    margin: 3rem auto 0; /* Tilaa kuvan yläpuolelle */
-    margin-right: 1.5rem; /* Tilaa sivun ja kuvan väliin */
-    border-radius: 7px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    border: 3px solid;
-    border-image: linear-gradient(to right, #0f3a1b, #317e47) 1; /* Liukuväri reunus */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover efekti */
+  display: block;
+  max-width: 80%; /* Maksimileveys 80% */
+  height: auto;
+  float: right;
+  margin: 3rem auto 0; /* Tilaa kuvan yläpuolelle */
+  margin-right: 1.5rem; /* Tilaa sivun ja kuvan väliin */
+  border-radius: 7px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border: 3px solid;
+  border-image: linear-gradient(to right, #0f3a1b, #317e47) 1; /* Liukuväri reunus */
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease; /* Hover efekti */
 }
 .img-fluid2:hover {
-    transform: scale(1.02); /* Kuva suurenee hieman */
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3); /* Varjo syvenee */
+  transform: scale(1.02); /* Kuva suurenee hieman */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3); /* Varjo syvenee */
 }
 .styled-paragraph {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.1rem;
-    line-height: 1.4;
-    color: #1d1d1d;
-    max-width: 800px;
-    margin: 0 auto 2rem;
-    padding: 1.5rem;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    text-align: left;
+  font-family: "Playfair Display", serif;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  color: #1d1d1d;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
 }
 .styled-subheading {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.8rem;
-    color: #101c12;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    margin: 2rem auto 1rem;
-    padding-bottom: 0.5rem;
-    max-width: 100%;
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+  color: #101c12;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin: 2rem auto 1rem;
+  padding-bottom: 0.5rem;
+  max-width: 100%;
 }
 /* Lintukatotaulukko */
 .table-section {
-    max-width: 1200px;
-    margin: 2rem auto;
-    padding: 0 1rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
 }
 
 .table-section h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2rem;
-    color: #101c12;
-    text-align: center;
-    margin-bottom: 1.5rem;
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  color: #101c12;
+  text-align: center;
+  margin-bottom: 1.5rem;
 }
 
 /* Table container */
 .table-container {
-    overflow-x: auto;
-    margin: 0 auto;
-    max-width: 100%;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    background-color: white;
-    padding: 1rem;
+  overflow-x: auto;
+  margin: 0 auto;
+  max-width: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: white;
+  padding: 1rem;
 }
 
 /* Taulukko stailaus */
 .lintukato-taulukko {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 1rem;
-    color: #333;
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+  color: #333;
 }
 
 .lintukato-taulukko caption {
-    font-style: italic;
-    color: #555;
-    padding: 0.5rem;
-    text-align: center;
-    font-size: 0.9rem;
-    caption-side: bottom;
+  font-style: italic;
+  color: #555;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+  caption-side: bottom;
 }
 
 .lintukato-taulukko th {
-    background-color: #305237;
-    color: white;
-    font-weight: 600;
-    text-align: left;
-    padding: 1rem;
-    font-family: 'Playfair Display', serif;
+  background-color: #305237;
+  color: white;
+  font-weight: 600;
+  text-align: left;
+  padding: 1rem;
+  font-family: "Playfair Display", serif;
 }
 
 .lintukato-taulukko td {
-    padding: 0.75rem 1rem;
-    border-bottom: 1px solid #e0e0e0;
-    text-align: left;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #e0e0e0;
+  text-align: left;
 }
 
 /* Alternating row colors */
 .lintukato-taulukko tr:nth-child(even) {
-    background-color: #f8f9fa;
+  background-color: #f8f9fa;
 }
 
 /* Header cell styling */
 .lintukato-taulukko th:first-child {
-    border-top-left-radius: 8px;
+  border-top-left-radius: 8px;
 }
 
 .lintukato-taulukko th:last-child {
-    border-top-right-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
 /* Responsiivisuus */
 @media (max-width: 768px) {
-    .lintukato-taulukko th,
-    .lintukato-taulukko td {
-        padding: 0.5rem;
-        font-size: 0.9rem;
-    }
+  .lintukato-taulukko th,
+  .lintukato-taulukko td {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
 }
 
 @media (max-width: 480px) {
-    .lintukato-taulukko {
-        font-size: 0.8rem;
-    }
+  .lintukato-taulukko {
+    font-size: 0.8rem;
+  }
 
-    .lintukato-taulukko th,
-    .lintukato-taulukko td {
-        padding: 0.4rem;
-    }
+  .lintukato-taulukko th,
+  .lintukato-taulukko td {
+    padding: 0.4rem;
+  }
 }
 .styled-subheading2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.8rem;
-    color: #101c12;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    margin: 2rem auto 1rem;
-    padding-bottom: 0.5rem;
-    max-width: 100%;
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+  color: #101c12;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin: 2rem auto 1rem;
+  padding-bottom: 0.5rem;
+  max-width: 100%;
 }
 /* Vinkki osuus */
 .help-tips {
-    margin-bottom: 3rem;
+  margin-bottom: 3rem;
 }
 
 .help-tips h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.2rem;
-    color: #2c3e50;
-    text-align: center;
-    margin-bottom: 2rem;
+  font-family: "Playfair Display", serif;
+  font-size: 2.2rem;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .tips-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
-    margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
 }
 .tip-card {
-    background-color: white;
-    border-radius: 8px;
-    padding: 1.5rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .tip-icon {
-    font-size: 2rem;
-    color: #62bb5c;
-    margin-bottom: 1rem;
-    text-align: center;
+  font-size: 2rem;
+  color: #62bb5c;
+  margin-bottom: 1rem;
+  text-align: center;
 }
 
 .tip-card h3 {
-    font-size: 1.3rem;
-    color: #122017;
-    margin-bottom: 0.75rem;
-    text-align: center;
+  font-size: 1.3rem;
+  color: #122017;
+  margin-bottom: 0.75rem;
+  text-align: center;
 }
 
 .tip-card p {
-    color: #122017;
-    line-height: 1.6;
-    margin-bottom: 1rem;
-    text-align: center;
+  color: #122017;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  text-align: center;
 }
 .photo-section {
-    max-width: 100%;
-    margin: 2rem auto;
-    text-align: center;
+  max-width: 100%;
+  margin: 2rem auto;
+  text-align: center;
 }
 
 .photo-container {
-    display: inline-block;
-    position: relative;
-    max-width: 100%;
+  display: inline-block;
+  position: relative;
+  max-width: 100%;
 }
 
 .kiljuhanhi-kuva {
-    width: 100%;
-    max-width: 800px;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    display: block;
-    border: 3px solid;
-    border-image: linear-gradient(to right, #0f3a1b, #317e47) 1; /* Liukuväri reunus */
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: block;
+  border: 3px solid;
+  border-image: linear-gradient(to right, #0f3a1b, #317e47) 1; /* Liukuväri reunus */
 }
 /* Linkki osuus */
 .resources-links {
-    max-width: 1200px;
-    margin: 3rem auto;
-    padding: 0 1rem;
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 0 1rem;
 }
 
 .resources-links h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2rem;
-    color: #101c12;
-    text-align: center;
-    margin-bottom: 1rem;
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  color: #101c12;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 .section-intro {
-    text-align: center;
-    color: #101c12;
-    max-width: 800px;
-    margin: 0 auto 2rem;
-    font-size: 1.1rem;
-    line-height: 1.6;
+  text-align: center;
+  color: #101c12;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
 }
 
 /* Linkkien container */
 .links-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
 }
 
 /* Linkki card */
 .link-card {
-    background-color: white;
-    border-radius: 8px;
-    padding: 1.5rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: center;
+  background-color: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  text-align: center;
 }
 
 .link-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }
 
 .link-icon {
-    font-size: 2rem;
-    color: #62bb5c;
-    margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #62bb5c;
+  margin-bottom: 1rem;
 }
 
 .link-card h3 {
-    font-size: 1.3rem;
-    color: #2c3e50;
-    margin-bottom: 0.75rem;
+  font-size: 1.3rem;
+  color: #2c3e50;
+  margin-bottom: 0.75rem;
 }
 
 .link-card p {
-    color: #555;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
-    font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
 }
 
 /* External linkkien stailaus */
 .external-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    color: #3498db;
-    text-decoration: none;
-    font-weight: 600;
-    transition: color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #3498db;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
 }
 
 .external-link:hover {
-    color: #2980b9;
-    text-decoration: underline;
+  color: #2980b9;
+  text-decoration: underline;
 }
 
 .external-link i {
-    font-size: 0.8rem;
+  font-size: 0.8rem;
 }
 
 /* Responsiivisuus */
 @media (max-width: 768px) {
-    .links-container {
-        grid-template-columns: 1fr;
-    }
+  .links-container {
+    grid-template-columns: 1fr;
+  }
 
-    .link-card {
-        padding: 1rem;
-    }
+  .link-card {
+    padding: 1rem;
+  }
 }
 
 @media (max-width: 480px) {
-    .resources-links h2 {
-        font-size: 1.8rem;
-    }
-
-    .link-card h3 {
-        font-size: 1.2rem;
-    }
+  .resources-links h2 {
+    font-size: 1.8rem;
   }
+
+  .link-card h3 {
+    font-size: 1.2rem;
+  }
+}
 footer {
-    text-align: center;
-    padding: 1.5rem;
-    background-color: #202c20;
-    color: white;
-    margin-top: 5rem; /* Tilaa footerin yläpuolelle */
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #202c20;
+  color: white;
+  margin-top: 5rem; /* Tilaa footerin yläpuolelle */
 }
 /* PARHAAT LAJIT-SIVU */
 
 .parhaatlajit-title {
-   font-family: "Playfair Display", serif;
+  font-family: "Playfair Display", serif;
   font-size: 3rem;
   color: #ffffff;
   text-align: center;
@@ -670,170 +680,347 @@ footer {
 }
 /* Lajit introlaatikon stailaus */
 .lajitintrolaatikko {
-    background-color: #f8f4e8;
-    border-radius: 10px;
-    padding: 2rem;
-    margin: 2rem auto;
-    max-width: 800px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    border: 1px solid #e0d8c0;
+  background-color: #f8f4e8;
+  border-radius: 10px;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 800px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border: 1px solid #e0d8c0;
 }
 
 .lajitintrolaatikko h1 {
-    color: #202c20;
-    margin-bottom: 1rem;
-    font-size: 2.2rem;
+  color: #202c20;
+  margin-bottom: 1rem;
+  font-size: 2.2rem;
 }
 
 .lajitintrolaatikko p {
-    color: #5a5a5a;
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
+  color: #5a5a5a;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
 }
 /* Lajiesittelyjen stailaus */
 .bird-sections {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-    padding: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .bird-card {
-    background-color: #f8f4e8;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    width: 300px;
-    transition: transform 0.3s ease;
+  background-color: #f8f4e8;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  transition: transform 0.3s ease;
 }
 
 .bird-card:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 .bird-image {
-    height: 200px;
-    overflow: hidden;
+  height: 200px;
+  overflow: hidden;
 }
 
 .bird-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
 }
 
 .bird-card:hover .bird-image img {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .bird-text {
-    padding: 1.5rem;
+  padding: 1.5rem;
 }
 
 .bird-text h2 {
-    color: #2c5e42;
-    margin: 0 0 0.5rem 0;
-    font-size: 1.5rem;
+  color: #2c5e42;
+  margin: 0 0 0.5rem 0;
+  font-size: 1.5rem;
 }
 
 .scientific-name {
-    color: #888;
-    font-style: italic;
-    margin: 0 0 1rem 0;
-    font-size: 0.9rem;
+  color: #888;
+  font-style: italic;
+  margin: 0 0 1rem 0;
+  font-size: 0.9rem;
 }
 
 .bird-text p {
-    color: #333232;
-    font-size: 0.95rem;
-    line-height: 1.6;
-    margin-bottom: 1rem;
+  color: #333232;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
 }
 /* Puluosio stailaus */
 .pigeon-section {
-    background-color: #f8f4e8;
-    padding: 3rem 2rem;
-    margin: 2rem auto;
-    max-width: 1200px;
-    border-radius: 15px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    border: 1px solid #f0f5fc;
+  background-color: #f8f4e8;
+  padding: 3rem 2rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  border: 1px solid #f0f5fc;
 }
 
 .pigeon-header {
-    text-align: center;
-    margin-bottom: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .pigeon-header h1 {
-    color: #2c5e42; /* Dark blue-gray for contrast */
+  color: #2c5e42; /* Dark blue-gray for contrast */
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.pigeon-subtitle {
+  color: #1b271f;
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.pigeon-content {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.pigeon-image-container {
+  text-align: center;
+  max-width: 400px;
+}
+
+.pigeon-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.pigeon-image:hover {
+  transform: scale(1.02);
+}
+
+.image-caption {
+  color: #596061;
+  font-style: italic;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.pigeon-text {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.pigeon-text h2 {
+  color: #161e27;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.pigeon-text p {
+  color: #0f1c12;
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+/* BONGAILU-SIVU */
+
+.bongailu-title {
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+  color: #ffffff;
+  text-align: center;
+  margin: 1rem 0;
+  font-weight: 700;
+}
+
+.spotting-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.spotting-hero p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.spotting-intro {
+  max-width: 800px;
+  margin: 0 auto 3rem auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.spotting-intro h2 {
+  color: #ffffff;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.spotting-intro p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+/* Tips Section */
+.spotting-tips {
+  background-color: #f8f4e8;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 1000px;
+  border-radius: 10px;
+}
+
+.spotting-tips h2 {
+  text-align: center;
+  color: #2c5e42;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.bongailu-tips-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.bongailu-tip-card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+}
+
+.bongailu-tip-card h3 {
+  color: #2c5e42;
+  margin-bottom: 0.8rem;
+  font-size: 1.3rem;
+}
+
+.bongailu-tip-card p {
+  color: #5a5a5a;
+  line-height: 1.6;
+  margin: 0;
+}
+.harakka-kuva {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: block;
+  border: 3px solid;
+  border-image: linear-gradient(to right, #0f3a1b, #317e47) 1; /* Liukuväri reunus */
+}
+/* Vuodenaika osio stailaus */
+.seasonal-tips {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+.seasonal-tips h2 {
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.seasonal-tips p {
+    color: #ffffff;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.seasonal-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.season-card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.season-card:hover {
+    transform: translateY(-5px);
+}
+
+.season-icon {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
 }
 
-.pigeon-subtitle {
-    color: #21272e;
-    font-size: 1.1rem;
-    max-width: 700px;
-    margin: 0 auto;
+.season-card h3 {
+    color: #2c5e42;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+.season-card p {
+    color: #5a5a5a;
+    font-size: 0.95rem;
     line-height: 1.6;
+    margin-bottom: 0.8rem;
+    text-align: left;
 }
 
-.pigeon-content {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin-bottom: 2rem;
-    flex-wrap: wrap;
-}
-
-.pigeon-image-container {
-    text-align: center;
-    max-width: 400px;
-}
-
-.pigeon-image {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-}
-
-.pigeon-image:hover {
-    transform: scale(1.02);
-}
-
-.image-caption {
-    color: #596061;
+.season-tip {
+    color: #2c5e42 !important;
     font-style: italic;
-    margin-top: 0.5rem;
-    font-size: 0.9rem;
-}
-
-.pigeon-text {
-    max-width: 800px;
-    margin: 0 auto;
+    background-color: #f0f8ff;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin-top: 1rem;
     text-align: center;
-    padding: 0 1rem;
 }
 
-.pigeon-text h2 {
-    color: #161e27;
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-}
-
-.pigeon-text p {
-    color: #34495e;
-    font-size: 1rem;
-    line-height: 1.8;
-    margin-bottom: 1rem;
+.riekko-kuva {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: block;
+  border: 3px solid;
+  border-image: linear-gradient(to right, #0f3a1b, #317e47) 1; /* Liukuväri reunus */
 }
