@@ -658,3 +658,182 @@ footer {
     color: white;
     margin-top: 5rem; /* Tilaa footerin yläpuolelle */
 }
+/* PARHAAT LAJIT-SIVU */
+
+.parhaatlajit-title {
+   font-family: "Playfair Display", serif;
+  font-size: 3rem;
+  color: #ffffff;
+  text-align: center;
+  margin: 1rem 0;
+  font-weight: 700;
+}
+/* Lajit introlaatikon stailaus */
+.lajitintrolaatikko {
+    background-color: #f8f4e8;
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 1px solid #e0d8c0;
+}
+
+.lajitintrolaatikko h1 {
+    color: #202c20;
+    margin-bottom: 1rem;
+    font-size: 2.2rem;
+}
+
+.lajitintrolaatikko p {
+    color: #5a5a5a;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+/* Lajiesittelyjen stailaus */
+.bird-sections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.bird-card {
+    background-color: #f8f4e8;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.bird-card:hover {
+    transform: translateY(-5px);
+}
+
+.bird-image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.bird-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.bird-card:hover .bird-image img {
+    transform: scale(1.05);
+}
+
+.bird-text {
+    padding: 1.5rem;
+}
+
+.bird-text h2 {
+    color: #2c5e42;
+    margin: 0 0 0.5rem 0;
+    font-size: 1.5rem;
+}
+
+.scientific-name {
+    color: #888;
+    font-style: italic;
+    margin: 0 0 1rem 0;
+    font-size: 0.9rem;
+}
+
+.bird-text p {
+    color: #333232;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+/* Puluosio stailaus */
+.pigeon-section {
+    background-color: #f8f4e8;
+    padding: 3rem 2rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border: 1px solid #f0f5fc;
+}
+
+.pigeon-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.pigeon-header h1 {
+    color: #2c5e42; /* Dark blue-gray for contrast */
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.pigeon-subtitle {
+    color: #21272e;
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.pigeon-content {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.pigeon-image-container {
+    text-align: center;
+    max-width: 400px;
+}
+
+.pigeon-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.pigeon-image:hover {
+    transform: scale(1.02);
+}
+
+.image-caption {
+    color: #596061;
+    font-style: italic;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.pigeon-text {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.pigeon-text h2 {
+    color: #161e27;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.pigeon-text p {
+    color: #34495e;
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
