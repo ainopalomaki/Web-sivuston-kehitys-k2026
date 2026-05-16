@@ -222,6 +222,125 @@ h1 {
 .intro-box {
   margin-top: 33rem; /* Lisää tilaa infoboxin yläpuolelle */
 }
+/* Mistä kaikki alkoi stailaus */
+.birding-story {
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+.story-container {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 2.5rem;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  border: 1px solid #ffffff;
+}
+
+.story-container h2 {
+  color: #0a140e;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  width: 100%;
+}
+
+.story-image {
+  flex: 1;
+  min-width: 250px;
+  max-width: 350px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.story-image img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.story-image img:hover {
+  transform: scale(1.03);
+}
+
+.story-text {
+  flex: 2;
+  min-width: 250px;
+  text-align: left;
+}
+
+.story-text p {
+  color: #0c110b;
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 1.2rem;
+}
+
+.story-signature {
+  color: #2c5e42 !important;
+  font-style: italic;
+  font-weight: bold;
+  text-align: right;
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+}
+
+/* Responsiivisuus */
+@media (max-width: 768px) {
+  .story-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .story-text {
+    text-align: left;
+  }
+
+  .story-signature {
+    text-align: left;
+  }
+}
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+  margin: 0 auto; /* Grid keskelle sivua */
+  max-width: 1200px;
+}
+
+.grid-item {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.grid-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.grid-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.grid-item:hover img {
+  transform: scale(1.05);
+}
+
 /* SUOJELU-SIVU */
 
 .suojelu-title {
@@ -680,14 +799,14 @@ footer {
 }
 /* Lajit introlaatikon stailaus */
 .lajitintrolaatikko {
-  background-color: #f8f4e8;
+  background-color: #ffffff;
   border-radius: 10px;
   padding: 2rem;
   margin: 2rem auto;
   max-width: 800px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
-  border: 1px solid #e0d8c0;
+  border: 1px solid #ffffff;
 }
 
 .lajitintrolaatikko h1 {
@@ -697,7 +816,7 @@ footer {
 }
 
 .lajitintrolaatikko p {
-  color: #5a5a5a;
+  color: #171e18;
   font-size: 1.1rem;
   line-height: 1.6;
   margin-bottom: 1.5rem;
@@ -714,7 +833,7 @@ footer {
 }
 
 .bird-card {
-  background-color: #f8f4e8;
+  background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -767,13 +886,13 @@ footer {
 }
 /* Puluosio stailaus */
 .pigeon-section {
-  background-color: #f8f4e8;
+  background-color: #ffffff;
   padding: 3rem 2rem;
   margin: 2rem auto;
   max-width: 1200px;
   border-radius: 15px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-  border: 1px solid #f0f5fc;
+  border: 1px solid #ffffff;
 }
 
 .pigeon-header {
@@ -782,7 +901,7 @@ footer {
 }
 
 .pigeon-header h1 {
-  color: #2c5e42; /* Dark blue-gray for contrast */
+  color: #1b271f;
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
 }
@@ -889,9 +1008,9 @@ footer {
   color: #ffffff;
 }
 
-/* Tips Section */
+/* Vinkki osio */
 .spotting-tips {
-  background-color: #f8f4e8;
+  background-color: #ffffff;
   padding: 2rem;
   margin: 2rem auto;
   max-width: 1000px;
@@ -913,7 +1032,7 @@ footer {
 }
 
 .bongailu-tip-card {
-  background-color: white;
+  background-color: rgb(223, 247, 227);
   padding: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -945,76 +1064,122 @@ footer {
 }
 /* Vuodenaika osio stailaus */
 .seasonal-tips {
-    max-width: 1200px;
-    margin: 3rem auto;
-    padding: 0 1rem;
-    text-align: center;
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+  text-align: center;
 }
 
 .seasonal-tips h2 {
-    color: #ffffff;
-    font-size: 2rem;
-    margin-bottom: 1rem;
+  color: #ffffff;
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 .seasonal-tips p {
-    color: #ffffff;
-    font-size: 1.1rem;
-    margin-bottom: 2rem;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+  color: #ffffff;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .seasonal-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
 }
 
 .season-card {
-    background-color: white;
-    padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s ease;
+  background-color: rgb(255, 255, 255);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
 }
 
 .season-card:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 .season-icon {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .season-card h3 {
-    color: #2c5e42;
-    margin-bottom: 1rem;
-    font-size: 1.4rem;
+  color: #2c5e42;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
 }
 
 .season-card p {
-    color: #5a5a5a;
-    font-size: 0.95rem;
-    line-height: 1.6;
-    margin-bottom: 0.8rem;
-    text-align: left;
+  color: #5a5a5a;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 0.8rem;
+  text-align: left;
 }
 
 .season-tip {
-    color: #2c5e42 !important;
-    font-style: italic;
-    background-color: #f0f8ff;
-    padding: 0.5rem;
-    border-radius: 5px;
-    margin-top: 1rem;
-    text-align: center;
+  color: #2c5e42 !important;
+  font-style: italic;
+  background-color: #ffffff;
+  padding: 0.5rem;
+  border-radius: 5px;
+  margin-top: 1rem;
+  text-align: center;
 }
 
 .riekko-kuva {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: block;
+  border: 3px solid;
+  border-image: linear-gradient(to right, #0f3a1b, #317e47) 1; /* Liukuväri reunus */
+}
+.birding-glossary {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+.glossary-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.glossary-item {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.glossary-term {
+  color: #101611;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.5rem;
+}
+
+.glossary-definition {
+  color: #101611;
+  margin: 0;
+  line-height: 1.6;
+}
+.viiksitimali-kuva {
   width: 100%;
   max-width: 800px;
   height: auto;
