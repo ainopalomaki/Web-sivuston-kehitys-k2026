@@ -787,6 +787,7 @@ footer {
   color: white;
   margin-top: 5rem; /* Tilaa footerin yläpuolelle */
 }
+
 /* PARHAAT LAJIT-SIVU */
 
 .parhaatlajit-title {
@@ -978,7 +979,7 @@ footer {
   font-weight: 700;
 }
 
-.spotting-hero h1 {
+.spotting-hero {
   font-size: 3rem;
   margin-bottom: 1rem;
 }
@@ -996,7 +997,7 @@ footer {
   text-align: center;
 }
 
-.spotting-intro h2 {
+.spotting-intro h1 {
   color: #ffffff;
   font-size: 2rem;
   margin-bottom: 1rem;
@@ -1017,7 +1018,7 @@ footer {
   border-radius: 10px;
 }
 
-.spotting-tips h2 {
+.spotting-tips h1 {
   text-align: center;
   color: #2c5e42;
   margin-bottom: 2rem;
@@ -1041,7 +1042,7 @@ footer {
   max-width: 300px;
 }
 
-.bongailu-tip-card h3 {
+.bongailu-tip-card h2 {
   color: #2c5e42;
   margin-bottom: 0.8rem;
   font-size: 1.3rem;
@@ -1070,7 +1071,7 @@ footer {
   text-align: center;
 }
 
-.seasonal-tips h2 {
+.seasonal-tips h1 {
   color: #ffffff;
   font-size: 2rem;
   margin-bottom: 1rem;
@@ -1109,7 +1110,7 @@ footer {
   margin-bottom: 0.5rem;
 }
 
-.season-card h3 {
+.season-card h1 {
   color: #2c5e42;
   margin-bottom: 1rem;
   font-size: 1.4rem;
@@ -1159,7 +1160,7 @@ footer {
 }
 
 .glossary-item {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   padding: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
